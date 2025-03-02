@@ -28,22 +28,22 @@ const Technologies = () => {
         </span>
       </h1>
       <div className="flex flex-wrap justify-center items-center gap-4 my-4">
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <FaAngular className="text-7xl text-red-600" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiFlask className="text-7xl" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiBlazor className="text-7xl text-purple-700" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <RiTailwindCssFill className="text-7xl text-blue-400" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiBootstrap className="text-7xl text-purple-700" />
         </div>
       </div>
@@ -53,16 +53,16 @@ const Technologies = () => {
         </span>
       </h1>
       <div className="flex flex-wrap justify-center items-center gap-4 my-4">
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiCplusplus className="text-7xl text-blue-700" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <TbBrandCSharp className="text-7xl text-purple-700" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <FaPython className="text-7xl text-yellow-300" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiTypescript className="text-7xl text-blue-600" />
         </div>
       </div>
@@ -72,32 +72,32 @@ const Technologies = () => {
         </span>
       </h1>
       <div className="flex flex-wrap justify-center items-center gap-4 my-4">
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <DiMsqlServer className="text-7xl" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiCypress className="text-7xl text-green-600" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiPostman className="text-7xl text-orange-500" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiSwagger className="text-7xl text-green-500" />
         </div>
       </div>
       <h1 className="mt-15 text-center text-3xl lg:text-4xl">
         <span className="bg-gradient-to-r from-orange-500 via-neutral-100 to-blue-600 bg-clip-text tracking-tight text-transparent">
-            Version Control & DevOps
+          Version Control & DevOps
         </span>
       </h1>
       <div className="flex flex-wrap justify-center items-center gap-4 my-4">
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiGit className="text-7xl text-orange-500" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <SiGithub className="text-7xl text-neutral-300" />
         </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        <div className="rounded-2xl border-4 border-neutral-900 p-4">
           <VscAzureDevops className="text-7xl text-blue-600" />
         </div>
       </div>
