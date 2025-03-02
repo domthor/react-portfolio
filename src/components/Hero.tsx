@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/Top.png";
+import profilePic from "../assets/T.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {

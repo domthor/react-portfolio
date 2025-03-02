@@ -1,13 +1,15 @@
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black py-6 px-8 shadow-lg z-50 flex items-center justify-between">
       {/* Logo on the left with link to Home */}
-      <div className="flex items-center">
+      <div className="pl-8 flex items-center">
         <a
           href="#home"
           className="text-5xl font-bold text-neutral-300 hover:text-white transition duration-200"
@@ -17,7 +19,7 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links */}
-      <ul className="hidden md:flex gap-6 text-neutral-300 text-lg">
+      <ul className="hidden md:flex gap-8 text-neutral-300 text-lg">
         <li>
           <a href="#about" className="hover:text-white transition duration-200">
             About
@@ -50,11 +52,13 @@ const Navbar = () => {
       </ul>
 
       {/* Social Media Icons on the Right */}
-      <div className="flex items-center gap-4 text-2xl text-neutral-300">
+      <div className="pr-8 flex items-center gap-8 text-2xl text-neutral-300">
         <a
           href="https://www.linkedin.com/in/dominick-thornton-62b51a223/"
           target="_blank"
           rel="noopener noreferrer"
+          data-tooltip-id="linkedin"
+          data-tooltip-content="LinkedIn"
         >
           <FaLinkedin className="hover:text-blue-500 transition duration-200 cursor-pointer" />
         </a>
@@ -62,6 +66,8 @@ const Navbar = () => {
           href="https://github.com/domthor"
           target="_blank"
           rel="noopener noreferrer"
+          data-tooltip-id="githubNav"
+          data-tooltip-content="GitHub"
         >
           <FaGithub className="hover:text-gray-400 transition duration-200 cursor-pointer" />
         </a>
@@ -69,10 +75,17 @@ const Navbar = () => {
           href="https://www.instagram.com/dominickthornton/"
           target="_blank"
           rel="noopener noreferrer"
+          data-tooltip-id="instagram"
+          data-tooltip-content="Instagram"
         >
           <FaInstagram className="hover:text-pink-500 transition duration-200 cursor-pointer" />
         </a>
       </div>
+      
+      {/* Tooltips for Social Media Icons */}
+      <Tooltip id="linkedin" />
+      <Tooltip id="githubNav" />
+      <Tooltip id="instagram" />
     </nav>
   );
 };
