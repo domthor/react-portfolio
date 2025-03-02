@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section id="projects" className="pt-30">
       <div className="border-b border-neutral-900 pb-4">
-        <h1 className="mb-10 text-center text-4xl">Projects</h1>
+        <h1 className="mb-10 text-center text-4xl lg:text-6xl">Projects</h1>
         <div className="">
           {PROJECTS.map(
             (
@@ -16,7 +16,10 @@ const Projects = () => {
               },
               index: number
             ) => (
-              <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+              <div
+                key={index}
+                className="mb-8 flex flex-wrap lg:justify-center"
+              >
                 <div className="w-full lg:w-1/4">
                   <img
                     src={project.image}

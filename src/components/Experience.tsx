@@ -1,10 +1,13 @@
 import { EXPERIENCES } from "../constants";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
     <section id="hero" className="pt-30">
       <div className="border-b border-neutral-900 pb-4">
-        <h1 className="mt-20 mb-10 text-center text-4xl">Experience</h1>
+        <h1 className="mt-20 mb-10 text-center text-4xl lg:text-6xl">
+          Experience
+        </h1>
         <div className="">
           {EXPERIENCES.map(
             (
