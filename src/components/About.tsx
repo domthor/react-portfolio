@@ -7,7 +7,7 @@ import "react-tooltip/dist/react-tooltip.css";
 const About = () => {
   return (
     <section id="about" className="pt-30">
-      <div className="border-b border-neutral-900 pb-4">
+      <div className="border-b border-neutral-900 pb-16">
         <motion.h1
           className="mb-10 text-center text-4xl lg:text-6xl"
           initial={{ opacity: 0, y: -100 }}
@@ -32,7 +32,7 @@ const About = () => {
                 <img
                   src={aboutImg}
                   alt="About Me"
-                  className="rounded-3xl m-9"
+                  className="rounded-3xl my-9"
                   data-tooltip-id="muir-woods"
                   data-tooltip-content="Muir Woods, Mill Valley, California"
                 />
