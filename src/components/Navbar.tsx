@@ -1,6 +1,6 @@
-import {FaLinkedin} from "react-icons/fa";
-import {FaGithub} from "react-icons/fa";
-import {FaInstagram} from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
@@ -31,6 +31,14 @@ const Navbar = () => {
             className="hover:text-white transition duration-200"
           >
             Technologies
+          </a>
+        </li>
+        <li>
+          <a
+            href="#experience"
+            className="hover:text-white transition duration-200"
+          >
+            Experience
           </a>
         </li>
         <li>
@@ -81,7 +89,7 @@ const Navbar = () => {
           <FaInstagram className="hover:text-pink-500 transition duration-200 cursor-pointer" />
         </a>
       </div>
-      
+
       {/* Tooltips for Social Media Icons */}
       <Tooltip id="linkedin" />
       <Tooltip id="githubNav" />
