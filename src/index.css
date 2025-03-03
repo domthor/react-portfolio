@@ -8,3 +8,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+img {
+  transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+  box-shadow: 0 0 20px 5px rgba(238, 0, 238, 0.796);
+}

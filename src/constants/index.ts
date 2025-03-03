@@ -1,76 +1,96 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+// import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer dedicated to crafting reliable and innovative web applications. With a strong foundation in computer science from the University of Michigan and hands-on experience in full-stack development, I specialize in building seamless digital experiences using C#, TypeScript, Angular, React, and SQL. I'm always excited to tackle complex challenges and bring ideas to life through code.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am currently wrapping up my Computer Science degree at the University of Michigan. I’ve gained industry experience through an internship at Urban Science, where I worked on full-stack web applications, API development, and database management. My expertise spans C#, Blazor, SQL, TypeScript, Angular, and React, and I thrive in Agile environments. Beyond coding, I love staying active and embracing the outdoors. Whether it’s hiking scenic trails, playing soccer, or working out, I’m always looking for ways to challenge myself physically and mentally. When I’m not exploring nature or in the gym, you’ll probably find me playing video games or diving into the latest web development technologies to stay ahead of the curve. I’m always on the lookout for exciting opportunities in software engineering where I can grow, contribute, and make an impact.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Sep 2024 - Present",
+    role: "Computer Consultant II ",
+    company: "University of Michigan",
+    descriptions: [
+      "Diagnose and resolve hardware issues for campus-managed devices, including input panels, touch panels, room schedulers, and digital signage, ensuring seamless functionality across university buildings",
+      "Collaborate with a student team to manage inventory, install, and replace devices efficiently, maintaining optimal performance and campus-wide technology infrastructure",
+    ],
+    technologies: ["Teamwork", "Communication", "Troubleshooting", "Problem-Solving"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "May 2023 - Aug 2024",
+    role: "Software Engineering Intern",
+    company: "Urban Science",
+    descriptions: [
+      "Developed and integrated new web pages and API endpoints for an internal admin tool using C# and Blazor, improving production monitoring and configuration management",
+      "Designed and implemented a new database with SQL, SSMS, and EF Core to support user roles, action tracking, and rights management within the admin application",
+      "Created a file upload tool and resolved critical bugs in production applications using TypeScript and Angular, enhancing functionality and user experience",
+      "Developed and deployed Cypress continuous integration tests to ensure the integrity of our two production web applications",
+      "Collaborated closely with senior software engineers and managers in Agile sprints and contributed to sprint planning, stand-ups, retrospectives, and demos",
+      "Implemented a global error-handling system in the admin application using C# and Blazor, significantly reducing debugging time and increasing operational efficiency",
+    ],
+    technologies: [
+      "Angular",
+      "C#",
+      "TypeScript",
+      "SQL",
+      "Blazor",
+      "Cypress",
+      "Azure DevOps",
+      "Postman",
+      "Swagger",
+    ],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "Sep 2021 - May 2023",
+    role: "Auxiliary Facility Supervisor",
+    company: "University of Michigan",
+    descriptions: [
+      "Oversaw operations and provided first aid support during large events across four auxiliary facilities, ensuring a safe and well-organized environment",
+      "Maintained clear communication with managers, team members, and rental groups to uphold safety standards and deliver exceptional client satisfaction",
+    ],
+    technologies: ["Teamwork", "Communication", "Problem-Solving"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Portfolio Website",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A personal portfolio website designed to showcase technologies, experience, projects, and contact information in an interactive and visually appealing way. Built with React, TypeScript, Tailwind CSS, and HTML, the website features a modern, responsive design with smooth animations and transitions powered by Framer Motion. Tooltips enhance user experience using React-Tooltip, providing additional context to key elements.",
+    technologies: ["React", "Tailwind", "TypeScript", "HMTL", "CSS"],
+    link: "#home",
   },
   {
-    title: "Task Management App",
+    title: "Instagram Clone",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A full-stack Instagram clone that replicates core social media functionalities, allowing users to create accounts, share posts, like and comment on content, and interact with other users. The frontend is built with React and JavaScript, delivering a responsive and dynamic user experience. The backend is powered by Python and Flask, providing RESTful APIs for user authentication, post management, likes, and comments. Data is stored using an SQLite database, efficiently handling user profiles, media posts, interactions, and activity tracking.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Python",
+      "Flask",
+      "SQL",
+      "HTML",
+      "CSS",
+    ],
+    link: "https://www.youtube.com/watch?v=F6nStAIEffA",
   },
   {
-    title: "Portfolio Website",
+    title: "Search Engine",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A scalable search engine designed with a Service-Oriented Architecture, capable of efficiently processing and indexing a subset of Wikipedia pages using a segmented inverted index with MapReduce. The system features an Index server with a REST API that delivers search results in JSON format, ensuring seamless integration and scalability. A dynamic Search server aggregates results from multiple Index servers, providing a user-friendly interface similar to major search engines. Advanced information retrieval techniques, including tf-idf and PageRank, enhance search relevance, while parallel processing with Madoop optimizes performance.",
+    technologies: ["Python", "Flask", "SQL", "HTML", "CSS"],
+    link: "https://www.youtube.com/watch?v=9c3R5OHH3g4&feature=youtu.be",
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Ann Arbor, Michigan",
+  phoneNo: "+1 (269) 635 3155",
+  email: "domthor@umich.edu",
 };

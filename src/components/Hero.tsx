@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="w-full lg:w-1/2">
             <div className="flex justify-center">
               <a
-                href="https://www.google.com/maps/@51.9952263,-9.6438638,3a,75y,5.59h,75.88t/data=!3m7!1e1!3m5!1s50-_06RUelcxC2eCHRzAvg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D14.117470504734484%26panoid%3D50-_06RUelcxC2eCHRzAvg%26yaw%3D5.586543401603567!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/@51.9954028,-9.6446363,3a,75y,15.41h,87.98t/data=!3m7!1e1!3m5!1sV7h7TCrYULgeoSpc3nKIqw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D2.0240075733629794%26panoid%3DV7h7TCrYULgeoSpc3nKIqw%26yaw%3D15.40645639544249!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -20,7 +20,7 @@ const Experience = () => {
                 year: string;
                 role: string;
                 company: string;
-                description: string;
+                descriptions: string[];
                 technologies: string[];
               },
               index: number
@@ -51,17 +51,21 @@ const Experience = () => {
                       {experience.company}
                     </span>
                   </h6>
-                  <p className="mb-4 text-neutral-400">
-                    {experience.description}
-                  </p>
-                  {experience.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="mr-2 mt-4 rounded bg-neutral-950 px-2 py-1 text-sm font-medium text-purple-500 hover:text-white hover:cursor-default"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  <ul className="mb-4 text-neutral-400 list-disc pl-5">
+                    {experience.descriptions.map((desc, index) => (
+                      <li key={index}>{desc}</li>
+                    ))}
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    {experience.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-500 hover:text-white hover:cursor-default"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </motion.div>
               </div>
             )

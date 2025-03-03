@@ -21,6 +21,7 @@ const Projects = () => {
                 image: string;
                 description: string;
                 technologies: string[];
+                link: string;
               },
               index: number
             ) => (
@@ -34,13 +35,13 @@ const Projects = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    width={150}
-                    height={150}
-                    className="mb-6 rounded"
-                  />
+                  <a href={project.link} target="_blank" rel="noreferrer">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="mb-6 rounded w-3/4"
+                    />
+                  </a>
                 </motion.div>
                 <motion.div
                   className="w-full max-w-xl lg:w-3/4"
