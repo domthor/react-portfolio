@@ -51,6 +51,14 @@ const Navbar = () => {
         </li>
         <li>
           <a
+            href="#education"
+            className="hover:text-white transition duration-200"
+          >
+            Education
+          </a>
+        </li>
+        <li>
+          <a
             href="#contact"
             className="hover:text-white transition duration-200"
           >

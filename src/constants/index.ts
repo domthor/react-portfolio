@@ -7,6 +7,27 @@ export const HERO_CONTENT = `I am a passionate full stack developer dedicated to
 
 export const ABOUT_TEXT = `I am currently wrapping up my Computer Science degree at the University of Michigan. I’ve gained industry experience through an internship at Urban Science, where I worked on full-stack web applications, API development, and database management. My expertise spans C#, Blazor, SQL, TypeScript, Angular, and React, and I thrive in Agile environments. Beyond coding, I love staying active and embracing the outdoors. Whether it’s hiking scenic trails, playing soccer, or working out, I’m always looking for ways to challenge myself physically and mentally. When I’m not exploring nature or in the gym, you’ll probably find me playing video games or diving into the latest web development technologies to stay ahead of the curve. I’m always on the lookout for exciting opportunities in software engineering where I can grow, contribute, and make an impact.`;
 
+export const EDUCATION = [
+  {
+    location: "Ann Arbor, MI",
+    year: "Sep 2021 - May 2025 (Expected)",
+    degree: "Bachelors of Science in Engineering",
+    major: "Computer Science",
+    gpa: "3.7/4.0",
+    school: "University of Michigan",
+    courses: [
+      "Data Structures and Algorithms",
+      "Database Management Systems",
+      "Computer Organization",
+      "Software Engineering",
+      "Web Systems",
+      "Operating Systems",
+      "Artificial Intelligence",
+      "Computer Security",
+    ],
+  },
+];
+
 export const EXPERIENCES = [
   {
     year: "Sep 2024 - Present",
@@ -16,7 +37,12 @@ export const EXPERIENCES = [
       "Diagnose and resolve hardware issues for campus-managed devices, including input panels, touch panels, room schedulers, and digital signage, ensuring seamless functionality across university buildings",
       "Collaborate with a student team to manage inventory, install, and replace devices efficiently, maintaining optimal performance and campus-wide technology infrastructure",
     ],
-    technologies: ["Teamwork", "Communication", "Troubleshooting", "Problem-Solving"],
+    technologies: [
+      "Teamwork",
+      "Communication",
+      "Troubleshooting",
+      "Problem-Solving",
+    ],
   },
   {
     year: "May 2023 - Aug 2024",
@@ -61,7 +87,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website designed to showcase technologies, experience, projects, and contact information in an interactive and visually appealing way. Built with React, TypeScript, Tailwind CSS, and HTML, the website features a modern, responsive design with smooth animations and transitions powered by Framer Motion. Tooltips enhance user experience using React-Tooltip, providing additional context to key elements.",
     technologies: ["React", "Tailwind", "TypeScript", "HMTL", "CSS"],
-    link: "#home",
+    link: "https://github.com/domthor/react-portfolio",
   },
   {
     title: "Instagram Clone",
