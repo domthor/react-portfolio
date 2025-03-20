@@ -4,6 +4,7 @@ import { DiMsqlServer } from "react-icons/di";
 import { FaPython } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
 import { SiCplusplus } from "react-icons/si";
 import { SiBlazor } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
@@ -178,6 +179,17 @@ const Technologies = () => {
           >
             <SiTypescript className="text-7xl text-blue-600" />
           </motion.div>
+          <motion.div
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            data-tooltip-id="javascript"
+            data-tooltip-content="JavaScript"
+            variants={iconVariants(3.75)}
+            initial="initial"
+            animate="animate"
+            whileHover={{ scale: 1.2 }}
+          >
+            <SiJavascript className="text-7xl text-yellow-300" />
+          </motion.div>
         </motion.div>
         <h1 className="mt-15 text-center text-3xl lg:text-4xl">
           <span className="bg-gradient-to-r from-neutral-100 via-orange-500 to-green-500 bg-clip-text tracking-tight text-transparent">
@@ -292,6 +304,7 @@ const Technologies = () => {
       <Tooltip id="c#" place="bottom" />
       <Tooltip id="python" place="bottom" />
       <Tooltip id="typescript" place="bottom" />
+      <Tooltip id="javascript" place="bottom" />
       <Tooltip id="sql" place="bottom" />
       <Tooltip id="cypress" place="bottom" />
       <Tooltip id="postman" place="bottom" />
