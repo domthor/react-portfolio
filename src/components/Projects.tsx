@@ -1,5 +1,6 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -22,12 +23,13 @@ const Projects = () => {
                 description: string;
                 technologies: string[];
                 link: string;
+                source: string;
               },
               index: number
             ) => (
               <div
                 key={index}
-                className="mb-8 flex flex-wrap lg:justify-center"
+                className="mb-8 flex flex-col lg:flex-row lg:justify-center items-center"
               >
                 <motion.div
                   className="w-full lg:w-1/4"
@@ -39,17 +41,27 @@ const Projects = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="mb-6 rounded w-3/4"
+                      className="mb-4 rounded w-3/4"
                     />
                   </a>
                 </motion.div>
                 <motion.div
-                  className="w-full max-w-xl lg:w-3/4"
+                  className="w-full max-w-xl lg:w-3/4 mb-4"
                   initial={{ opacity: 0, x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  <h6 className="mb-2 font-semibold">{project.title}</h6>
+                  <div className="flex flex-row space-x-4 items-center mb-2">
+                    <h6 className="font-semibold">{project.title}</h6>
+                    {project.source !== "" && (
+                      <a href={project.source}>
+                        <div className="cursor-pointerrounded bg-neutral-950 px-2 py-1 text-sm font-medium text-purple-500 hover:text-white hover:cursor-default flex flex-row items-center space-x-2">
+                          <div>Source</div>
+                          <FaGithub/>
+                        </div>
+                      </a>
+                    )}
+                  </div>
                   <p className="mb-4 text-neutral-400">{project.description}</p>
                   {project.technologies.map((tech, index) => (
                     <span

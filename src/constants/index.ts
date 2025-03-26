@@ -1,3 +1,4 @@
+import project0 from "../assets/projects/project-0.png";
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
@@ -82,12 +83,22 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Risk Radar",
+    image: project0,
+    description:
+      "Risk Radar is a dynamic web application that provides a comprehensive data dashboard for analyzing disaster and crime trends. Built with a React frontend and a Python Flask backend, the platform integrates real-time data from FEMA and FBI APIs to deliver accurate and up-to-date insights. The frontend leverages JavaScript and Tailwind CSS for a responsive, user-friendly experience, while the SQLite database efficiently manages data storage. Utilizing MUI components, the dashboard presents complex information in a clear, intuitive format, allowing users to explore and understand risk factors across various regions. With its responsive design, Risk Radar ensures seamless access on any device.",
+    technologies: ["React", "Tailwind", "JavaScript", "Python", "Flask", "SQL"],
+    link: "https://risk-radar-frontend.vercel.app/",
+    source: "https://github.com/domthor/risk-radar",
+  },
+  {
     title: "Portfolio Website",
     image: project1,
     description:
       "A personal portfolio website designed to showcase technologies, experience, projects, and contact information in an interactive and visually appealing way. Built with React, TypeScript, Tailwind CSS, and HTML, the website features a modern, responsive design with smooth animations and transitions powered by Framer Motion. Tooltips enhance user experience using React-Tooltip, providing additional context to key elements.",
     technologies: ["React", "Tailwind", "TypeScript", "HMTL", "CSS"],
-    link: "https://github.com/domthor/react-portfolio",
+    link: "https://dominickthornton.com/",
+    source: "https://github.com/domthor/react-portfolio",
   },
   {
     title: "Instagram Clone",
@@ -104,6 +115,7 @@ export const PROJECTS = [
       "CSS",
     ],
     link: "https://www.youtube.com/watch?v=F6nStAIEffA",
+    source: "",
   },
   {
     title: "Search Engine",
@@ -112,6 +124,7 @@ export const PROJECTS = [
       "A scalable search engine designed with a Service-Oriented Architecture, capable of efficiently processing and indexing a subset of Wikipedia pages using a segmented inverted index with MapReduce. The system features an Index server with a REST API that delivers search results in JSON format, ensuring seamless integration and scalability. A dynamic Search server aggregates results from multiple Index servers, providing a user-friendly interface similar to major search engines. Advanced information retrieval techniques, including tf-idf and PageRank, enhance search relevance, while parallel processing with Madoop optimizes performance.",
     technologies: ["Python", "Flask", "SQL", "HTML", "CSS"],
     link: "https://www.youtube.com/watch?v=9c3R5OHH3g4&feature=youtu.be",
+    source: "",
   },
 ];
 
