@@ -2,7 +2,7 @@ import project0 from "../assets/projects/project-0.png";
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
-// import project4 from "../assets/projects/project-4.png";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer dedicated to crafting reliable and innovative web applications. With a strong foundation in computer science from the University of Michigan and hands-on experience in full-stack development, I specialize in building seamless digital experiences using C#, TypeScript, Angular, React, and SQL. I'm always excited to tackle complex challenges and bring ideas to life through code.`;
 
@@ -124,6 +124,15 @@ export const PROJECTS = [
       "A scalable search engine designed with a Service-Oriented Architecture, capable of efficiently processing and indexing a subset of Wikipedia pages using a segmented inverted index with MapReduce. The system features an Index server with a REST API that delivers search results in JSON format, ensuring seamless integration and scalability. A dynamic Search server aggregates results from multiple Index servers, providing a user-friendly interface similar to major search engines. Advanced information retrieval techniques, including tf-idf and PageRank, enhance search relevance, while parallel processing with Madoop optimizes performance.",
     technologies: ["Python", "Flask", "SQL", "HTML", "CSS"],
     link: "https://www.youtube.com/watch?v=9c3R5OHH3g4&feature=youtu.be",
+    source: "",
+  },
+  {
+    title: "My First Website",
+    image: project4,
+    description:
+      "During my first high school computer science course, I created my very first website using HTML, CSS, JavaScript, and Bootstrap. This project was my introduction to web development and allowed me to explore the fundamentals of building and styling web pages while adding interactivity. The website was a multi-page experience designed to showcase both my interests and newly learned technical skills. I structured the site using HTML for content, styled it with CSS for visual appeal, and used JavaScript to add dynamic features. Bootstrap helped me create a responsive layout that adapted to different screen sizes.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    link: "https://www.andrews.edu/~dominickt/index.html",
     source: "",
   },
 ];
