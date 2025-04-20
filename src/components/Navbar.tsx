@@ -4,7 +4,6 @@ import { FaInstagram } from "react-icons/fa";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
-
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black py-6 px-8 shadow-lg z-50 flex items-center justify-between">
@@ -76,7 +75,7 @@ const Navbar = () => {
           data-tooltip-id="linkedin"
           data-tooltip-content="LinkedIn"
         >
-          <FaLinkedin className="hover:text-blue-500 transition duration-200 cursor-pointer" >Linked In</FaLinkedin>
+          <FaLinkedin className="hover:text-blue-500 transition duration-200 cursor-pointer" />
         </a>
         <a
           href="https://github.com/domthor"
@@ -85,7 +84,7 @@ const Navbar = () => {
           data-tooltip-id="githubNav"
           data-tooltip-content="GitHub"
         >
-          <FaGithub className="hover:text-gray-400 transition duration-200 cursor-pointer">Github</FaGithub>
+          <FaGithub className="hover:text-gray-400 transition duration-200 cursor-pointer" />
         </a>
         <a
           href="https://www.instagram.com/dominickthornton/"
@@ -94,7 +93,7 @@ const Navbar = () => {
           data-tooltip-id="instagram"
           data-tooltip-content="Instagram"
         >
-          <FaInstagram className="hover:text-pink-500 transition duration-200 cursor-pointer">Instagram</FaInstagram>
+          <FaInstagram className="hover:text-pink-500 transition duration-200 cursor-pointer" />
         </a>
       </div>
 
@@ -106,4 +105,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;
