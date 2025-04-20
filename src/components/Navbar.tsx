@@ -76,7 +76,7 @@ const Navbar = () => {
           data-tooltip-id="linkedin"
           data-tooltip-content="LinkedIn"
         >
-          <FaLinkedin className="hover:text-blue-500 transition duration-200 cursor-pointer" />
+          <FaLinkedin className="hover:text-blue-500 transition duration-200 cursor-pointer" >Linked In</FaLinkedin>
         </a>
         <a
           href="https://github.com/domthor"
@@ -85,7 +85,7 @@ const Navbar = () => {
           data-tooltip-id="githubNav"
           data-tooltip-content="GitHub"
         >
-          <FaGithub className="hover:text-gray-400 transition duration-200 cursor-pointer" />
+          <FaGithub className="hover:text-gray-400 transition duration-200 cursor-pointer">Github</FaGithub>
         </a>
         <a
           href="https://www.instagram.com/dominickthornton/"
@@ -94,7 +94,7 @@ const Navbar = () => {
           data-tooltip-id="instagram"
           data-tooltip-content="Instagram"
         >
-          <FaInstagram className="hover:text-pink-500 transition duration-200 cursor-pointer" />
+          <FaInstagram className="hover:text-pink-500 transition duration-200 cursor-pointer">Instagram</FaInstagram>
         </a>
       </div>
 

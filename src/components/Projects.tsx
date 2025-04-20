@@ -1,6 +1,7 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
+import { FaPlayCircle } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -52,12 +53,20 @@ const Projects = () => {
                   transition={{ duration: 1 }}
                 >
                   <div className="flex flex-row space-x-4 items-center mb-2">
-                    <h6 className="font-semibold">{project.title}</h6>
+                    <div className="font-semibold text-xl">{project.title}</div>
                     {project.source !== "" && (
-                      <a href={project.source}>
+                      <a href={project.source } target="_blank" rel="noreferrer">
                         <div className="cursor-pointerrounded bg-neutral-950 px-2 py-1 text-sm font-medium text-purple-500 hover:text-white hover:cursor-default flex flex-row items-center space-x-2">
                           <div>Source</div>
-                          <FaGithub/>
+                          <FaGithub />
+                        </div>
+                      </a>
+                    )}
+                    {project.link !== "" && (
+                      <a href={project.link} target="_blank" rel="noreferrer">
+                        <div className="cursor-pointerrounded bg-neutral-950 px-2 py-1 text-sm font-medium text-purple-500 hover:text-white hover:cursor-default flex flex-row items-center space-x-2">
+                          <div>Demo</div>
+                          <FaPlayCircle />
                         </div>
                       </a>
                     )}
@@ -68,7 +77,7 @@ const Projects = () => {
                       key={index}
                       className="mr-2 mt-4 rounded bg-neutral-950 px-2 py-1 text-sm font-medium text-purple-500 hover:text-white hover:cursor-default"
                     >
-                      {tech}
+                      <a href="#technologies">{tech}</a>
                     </span>
                   ))}
                 </motion.div>

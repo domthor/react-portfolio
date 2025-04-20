@@ -45,12 +45,12 @@ const Experience = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  <h6 className="mb-2 font-semibold">
+                  <div className="mb-2 font-semibold">
                     {experience.role} -{" "}
                     <span className="text-sm text-purple-100">
                       {experience.company}
                     </span>
-                  </h6>
+                  </div>
                   <ul className="mb-4 text-neutral-400 list-disc pl-5">
                     {experience.descriptions.map((desc, index) => (
                       <li key={index}>{desc}</li>
@@ -62,7 +62,7 @@ const Experience = () => {
                         key={index}
                         className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-500 hover:text-white hover:cursor-default"
                       >
-                        {tech}
+                        <a href="#technologies">{tech}</a>
                       </span>
                     ))}
                   </div>
